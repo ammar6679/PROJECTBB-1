@@ -15,18 +15,64 @@
 			from{font-size: 10px;}
 			to{font-size: 30px;}
 		}
+		header{
+			position: fixed;
+			display:flex;
+			padding: 1rem 7%;
+			align-items: centre;
+			 justify-content: space-between;
+			box-shadow: lightblue;
+			background-color: sandybrown;
+			width: 100%;
+			top: 0px;
+			left: 0px;
+		}
+		
+		  header .navbar a{
+                 font-size: 1.7rem;
+                 border-radius: .5rem;
+                 padding: .5rem  1.5rem;
+                 color: black;
+                 text-decoration: none;
+                }
+		header .navbar a:hover{
+                color: #fff;
+                background-color: green;
+               }
+               .navbar{
+               	margin-left: 500px;
+               }
+               .downloadButton{
+               	background-color: greenyellow;
+               	text-decoration: none;
+               	border: 3px solid black;
+               }
+               .buttonContainer{
+               	margin-top: 100px;
+               }
+
+
+
 	</style>
 </head>
 <body>
 
-	<header id="header">
-		<div class="logo">logo image</div>
-		<div class="about"><a href="#">About</a></div>
-		<div class="contactUs"><a href="#">Contact Us</a></div>
-	</header>
-	<div class="content">
-		<h3>Download the extension from here.</h3>
-		<button>Download</button>
-	</div>
+	 <header>
+        <a href="#" class="logo"><i class="fab fa-500px"></i></a>
+    
+    
+        <nav class="navbar">
+            <a class="active" href="about">Platforms</a>
+            <a href="#">Contact US</a>
+            <a href="#">About US</a>
+		
+           
+		 </nav>
+		 <div  class="logo">
+			 <a href="" class="fas fa-heart"></a>
+		 </div>
+    </header>
+    <div class="buttonContainer"><a href="#" class="downloadButton">Download the button from here</a></div>
+    <span>Logo</span>
 </body>
 </html>
